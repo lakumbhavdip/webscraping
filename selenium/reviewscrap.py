@@ -8,430 +8,458 @@ df = pd.read_excel(excel_file ,usecols='B')
 data_list = df.values.tolist()
 # print(data_list)
 
-'''
-dvlprurl =[]
-
+appurls =[]
+a =1
 for row in data_list:
     # print(row[0])        
     app = re.sub(r"\s+", '_', row[0]).lower()
-    # print(app)
-    
+    # print(a,app)
+    a+=1
 #     create urls with app name
-
     if app == "design_maker_for_campaigns":
         app = "zhekouhuodongsheji"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "add_to_cart_button":
         app = "add_to_cart"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "sales_popup":
         app = "sales_notification"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "google_translate_helper":
         app = "gugefanyizhushou"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "upsell_&_bundles":
         app = "product_bundles"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "forms_&_popups":
         app = "popups"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "page_speed_booster":
         app = "xingnengyouhuabooster3451"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "cart_upsell_-_progress_bar":
         app = "cart_upsell_progress_bar"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "payment_butler":
         app = "fee_payment_butler"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "multi-platform_comment_collection":
         app = "multi_platform_comment_collection"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "free_gift":
         app = "gift_offer"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "variants_combination":
         app = "variant_combination"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "easyrank_seo_all-in-one":
         app = "seo_search_engine_optimization_2_0"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "product_filters_&_color_swatch":
         app = "product_filters_color_palette"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "product_pin":
         app = "product_boost_extension"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "instagram_feed":
         app = "instagram-photo"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "salesmartly_chat":
         app = "salesmartly"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "b2b_&_wholesale_solution":
         app = "b2b_wholesale_solution"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "trustdecision_fraud_prevention":
         app = "td_antifraud"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "smart_feed":
         app = "smart_feed_prod"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "lucky_orange:_user_behavior_analysis":
         app = "lucky_orange"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "shopify_store_one-click_migration":
         app = "shopify_store_one_click_relocation"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "gdpr-privacy_banner":
         app = "gdpr_yinsidanchuang"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "tiktok_marketing":
         app = "tiktok-marketing"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "tiktok_for_business":
         app = "tiktok-business-plugin"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "flow_automation":
         app = "flow"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "multi-channel_pixel_installation":
         app = "multiplatform_pixel_installation"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "stream_email&sms_marketing":
         app = "stream_email_sms_marketing"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "3d_&_ar_product_viewer":
         app = "product_3d_ar_display"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "pre-order":
         app = "pre_order_now"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "installment_information_display":
         app = "fenqixinxizhanshi"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "eprolo-dropshipping":
         app = "eprolo_dropshipping"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "multi-language_translator":
         app = "ugckeshihuafanyi"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "mademine:_easy_dropshipping":
         app = "MadeMine"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "shoplazza_one-click_shop_migration_tool":
         app = "shoplazza_one_click_shop_migration_tool"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "mambasms_sms&email_marketing":
         app = "mambasms_sms_email_marketing"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "pingpong":
         app = "pingpong1398"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "wotohub-_influencer_marketing_solution":
         app = "wotohub_influencer_marketing_solution"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "picwish_-_ai_background_remover":
         app = "picwish_ai_background_remover"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "buttonify-dropshipping_app":
         app = "buttonify_dropshipping_app"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "poptin:_exit_intent,_pop_ups,_and_forms":
         app = "poptin_exit_intent_pop_ups_and_forms"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "quickcep_‑_bot,_chat_&_email":
         app = "quickcep_bot_chat_email"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "easyparcel_-_delivery_made_easy":
         app = "easyparcel_delivery_made_easy"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "geolocation_redirects":
         app = "duoshichangzhongdingxiang"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "pt._shippindo_teknologi_logistik":
         app = "shipper_logistic"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "klaviyo_-_email_marketing_app":
         app = "klaviyo_email_marketing_app"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "kua.ai":
         app = "kua_ai"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "print_on_demand_&_dropshipping":
         app = "print_on_demand_dropshipping"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "shopflex:_marketing&operation_automation":
         app = "shopflex_marketing_operation_automation"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)      
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "kakaclo_-_dropshipping":
         app = "kakaclo_dropshipping"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)      
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "miduoke_enterprise":
         app = "miduoke"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)      
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "tec-kol:_influencer_marketing_platform":
         app = "taikekol"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)      
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "yahoo_tracks_dot_one-click_install":
         app = "yahoo_tracks_dot_one_click_install"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)      
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "contact_lens_bundle_purchase_plugin":
         app = "add_to_cart_plugin_for_contact_lens"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)      
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "myyshop":
         app = "xianzhi"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)      
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "calendar_booking-in-store_service":
         app = "calendar_booking"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)      
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "prompt:_email_popup_&_upsell":
         app = "prompt_email_popup_upsell"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "irobotbox-erp":
         app = "irobotbox_erp"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "dcs_gto_file_sync":
         app = "dcs_synchronized_data_tool"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "wininfluencer":
         app = "hongque_kol"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "wanliniu_erp":
         app = "niuniu_erp"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "laibot_ai_customer_service_platform":
         app = "laibaozhineng"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "wangdiantong_cross-border":
         app = "wangdiantong_cross_border"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "hubspot_shopline_integration":
         app = "hubspot_by_makewebbetter"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "staff_attendance_management":
         app = "yuangongkaoqinguanli"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "pickupp:_on‑demand_delivery":
         app = "pickupp_on_demand_delivery"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "xcollab:_brand_collaborations":
         app = "xcollab_brand_collaborations"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "sendcloud_shipping":
         app = "sendcloudapp"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "eiz_fulfillment_technology":
         app = "eiz_fulfillment"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "dowsure":
         app = "doushabao_dowsure"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "cedcommerce_catch_integration":
         app = "shopline_catch_integration4254"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "cedcommerce_ebay_integration":
         app = "shopline_ebay_integration4303"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "cedcommerce_amazon_integration":
         app = "shopline_amazon_integration4302"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "yopoun":
         app = "youbangkeji4151"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "wemedia":
         app = "wemediameijieguanjia"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "hs_product_options_&_variants":
         app = "hi_options"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     elif app == "woocommerce_one_click_migration":
         app = "woocommerce"
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append
+        appurls.append(dvurl)
     else:
         dvurl = (f"https://apps.shopline.com/detail/?appHandle={app}")
         # print(dvurl)   
-        dvlprurl.append(dvurl)
-    # print(dvlprurl)
+        appurls.append(dvurl)
 
-for url in dvlprurl:
-    print(url)
+# print(appurls)
+# print(len(appurls))
+
+c = 1
+review=[]
+for url in appurls:
+    print("-------------")
+    print(c,url)
+    print("-------------")
+    c+=1
+    
+    reviewdriver = webdriver.Chrome()
+    reviewdriver.get(url)
+    reviews = reviewdriver.find_elements(By.XPATH,".//div[@class = '_comment_1085k_1']")
+    reviews_texts = [reviews.text for reviews in reviews]
+    inner=[]
+    for text in reviews_texts:
+        inner.append(text)
+    review.append(inner)
+# print(review)
+print(len(review))
+df = pd.DataFrame({'Lines': [" --> ".join([str(element) for element in sublist]) for sublist in review]})
+# print(df)
+df.to_excel("reviewsfile.xlsx",index=False)
+
+reviewdriver.close
+
+
+
+
     
 '''
-review=[]
-url =  'https://apps.shopline.com/detail/?appHandle=adspower_antidetect_browser'
+reviewdriver = webdriver.Chrome()
+reviewdriver.get(url)
+reviews = reviewdriver.find_elements(By.XPATH,".//div[@class = '_comment_1085k_1']")
+reviews_texts = [reviews.text for reviews in reviews]
+inner=[]
+for text in reviews_texts:
+    inner.append(text)
+review.append(inner)
+# print(review)
+print(len(review))
+df = pd.DataFrame({'Lines': [" --> ".join([str(element) for element in sublist]) for sublist in review]})
+# print(df)
+df.to_excel("reviewsfile.xlsx",index=False)
 
-driver = webdriver.Chrome()
-driver.get(url)
-developers = driver.find_elements(By.XPATH,".//p[@class = 'body_4']")
-# print(developers)
-# Convert the elements to text format
-developers_texts = [developers.text for developers in developers]
-developer = developers_texts[0] #developer name
-print(developer)
-review.append(developer)
-driver.close
-print(review)
+'''
+
+
 
 # dvlls =[]
 # try:
 #     count = 1
-#     for dvpurl in dvlprurl:
+#     for dvpurl in appurls:
 #         # print(dvpurl)
 #         if dvpurl == "https://apps.shopline.com/detail/?appHandle=design_maker_for_campaigns":
 #             dvpurl = "https://apps.shopline.com/detail/?appHandle=zhekouhuodongsheji"

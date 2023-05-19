@@ -38,10 +38,10 @@ for i in ls:
 
 print("------------------------------------------------------------------------------------------------------------")
 
-df = pd.DataFrame(reviewlst)
-print(df)
-df.to_excel("reviews.xlsx",index=False)
+# df = pd.DataFrame(reviewlst)
+# print(df)
+# df.to_excel("reviews.xlsx",index=False)
 
-df1 = pd.DataFrame(chargelst)
-print(df1)
-df1.to_excel("charge.xlsx",index=False)
+# df1 = pd.DataFrame(chargelst)
+# print(df1)
+# df1.to_excel("charge.xlsx",index=False)

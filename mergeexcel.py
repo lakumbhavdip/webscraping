@@ -18,10 +18,11 @@ file_paths = [
     'D:/wanbuffer/django/appname.xlsx',
     'D:/wanbuffer/django/developername.xlsx',
     'D:/wanbuffer/django/appemail.xlsx',
-    'D:/wanbuffer/django/reviews.xlsx',
-    'D:/wanbuffer/django/charge.xlsx'
+    'D:/wanbuffer/django/charge.xlsx',
+    'D:/wanbuffer/django/rating.xlsx',
+    'D:/wanbuffer/django/reviews.xlsx'
 ]
-column_names = ['Email-Phone', 'Appname', 'Developername', 'AppEmail', 'Review', 'Charge']
+column_names = ['Email-Phone', 'Appname', 'Developername', 'AppEmail', 'Charge', 'Rating', 'Review']
 
 dfs = []
 for file_path in file_paths:
@@ -31,4 +32,4 @@ for file_path in file_paths:
 merged_data = pd.concat(dfs, axis=1)
 merged_data.columns = column_names
 
-merged_data.to_excel('merged_file.xlsx', index=False)
+merged_data.to_excel('merged_file1.xlsx', index=False)
