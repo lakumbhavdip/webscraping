@@ -40,9 +40,10 @@ import csv
 #         yield appname
 
 class BlogSpider(scrapy.Spider):
-    name = "blog"
-    url = ["https://wanbuffer.com/"]
+    name = "toys"
+    url = ["https://www.waleedtoys.com/BrandList?cid=Ki3bgiSxO3vQ6MnH4WXcXXSbegSfsseiyny0"]
     
     def blogscrap(self,response):
-        bloghead = response.css('h5 pb-3')
-        yield bloghead
+        bloghead = response.css('div.view-more-div a(attr)::text').get()
+        print(bloghead)
+        # yield bloghead
